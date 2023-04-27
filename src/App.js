@@ -3,7 +3,6 @@ import "./App.css";
 import { useState } from "react";
 
 function Header(props) {
-  console.log(props);
   return (
     <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -41,8 +40,6 @@ function App() {
   // useState의 인자는 스테이트의 첫번째 값.
   // 배열을 반환받게 되는데 0번은 원본 값, 1번은 원본을 바꾸기 위한 함수
   // 1번 함수를 실행하면 App을 다시 실행한다.
-
-  console.log(mode);
 
   let content = null;
   if (mode === "WELCOME") {
